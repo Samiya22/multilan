@@ -2,4 +2,7 @@ from django.contrib import admin
 from .models import Malumot
 
 # Register your models here.
-admin.site.register(Malumot)
+@admin.register(Malumot)
+class MalumotAdmin(admin.ModelAdmin):
+    prepopulated_fields = {'slug': ('nomi',)}
+
