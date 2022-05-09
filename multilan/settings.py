@@ -20,6 +20,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'modeltranslation',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -107,6 +108,11 @@ LANGUAGES = [
     ('uz', _('Uzbek')),
     ('en', _('English')),
 ]
+
+
+MODELTRANSLATION_DEFAULT_LANGUAGE = 'uz'
+MODELTRANSLATION_PREPOPULATE_LANGUAGE = 'en'
+
 
 
 # Static files (CSS, JavaScript, Images)
